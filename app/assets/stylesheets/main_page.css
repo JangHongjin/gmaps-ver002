@@ -1,0 +1,62 @@
+*{margin:0; padding:0;}
+html, body{height:100%;}
+ul, li, ol{list-style:none;}
+a{text-decoration:none; color:black;}
+/*toggle*/
+
+
+
+/*navi*/
+/*로그인전후 다르게 하는 방법 알아보기*/
+/*navi font정하고 글자크기, hover했을때 변하는것 정하기, page이동이랑 색, 로고 정하기*/
+#menu_bar{position:absolute; background-color:#dddddd;}
+#menu_bar .container{padding-right:100px;}
+#menu_bar .container .logo{float:left; width:70px; height:40px; background-color:red;}
+#menu_bar .container .side_menu{float:right;}
+#menu_bar .container .side_menu li{margin-left:10px;}
+#menu_bar:after{clear:both;}/*clearfix찾아오기*/
+
+/*toggle안에 있음*/
+/*table*/
+/*table stylesheet 다뽑아서 옮기기*/
+.tog_container{position:relative;}
+.toggler{position:absolute; z-index:100; border:2px solid #dddddd; background-color:gray; width:700px; margin-right:70px; right:0; margin-top:60px;}
+.toggler #tabs ul li{float:left; color:white; margin-left:20px;}
+.toggler #tabs ul li a{text-decoration:none; color:black; outline:none;}
+.toggler #tabs > div{clear:both;}
+.status table{z-index:100; background-color: white; opacity:0.8;}
+.status thead tr th{
+    text-align:center;
+}
+
+
+
+/*map부분*/
+/*왜 지도가 넘치는지 모르겠음*/
+.main_map{position:absolute; width:100%; height:100vh;}
+#map{width:100%; height:100vh; position:absolute;}
+
+
+
+
+
+
+
+/*.holder{*/
+/*    width: 100%;*/
+/*    height:100%;*/
+/*    position:relative;*/
+/*}*/
+/*.bar{*/
+/*    width: 100%;*/
+/*    height:100%;*/
+/*}*/
+/*.frame{*/
+/*    position:absolute;*/
+/*    top:0;*/
+/*    left:0;*/
+/*    width:50%;*/
+/*    height:40px;*/
+/*    margin-left: 40%;*/
+/*    margin-top: 30%;*/
+/*}*/

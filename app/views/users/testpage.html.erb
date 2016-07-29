@@ -1,0 +1,43 @@
+
+이것은 아이프레임!!!
+이것은 아이프레임!!!
+이것은 아이프레임!!!
+이것은 아이프레임!!!
+이것은 아이프레임!!!
+이것은 아이프레임!!!
+이것은 아이프레임!!!
+
+<div>
+    <!--iframe target-->
+    <div class="table-responsive ranker_box">
+        <table>
+          <thead>
+            <tr>
+              <th>위도</th>
+              <th>경도</th>
+              <th>Id</th>
+              <th>Address</th>
+              <th>Title</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <%# @users.each do |user| %>
+            <%= content_tag_for(:tr, @users) do |user| %>
+              <tr>
+                <td><%= user.latitude %></td>
+                <td><%= user.longitude %></td>
+                <td><%= user.name %></td>
+                <td><%= user.address %></td>
+                <td><%= user.title %></td>
+                <td><%= link_to 'Show', user %></td>
+                <td><%= link_to 'Edit', edit_user_path(user) %></td>
+                <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <!--테이블크기조정, 드래그 집어넣기-->
+    </div>
+  </div>
